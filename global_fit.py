@@ -31,9 +31,7 @@ data,vec=onehotencoding(FileNameList)
 vec1=vec[0,:]
 vec2=vec[1,:]
 vec3=vec[2,:]
-# vec1 = np.array([[1, 0, 0]])
-# vec2 = np.array([[0, 1, 0]])
-# vec3 = np.array([[0, 0, 1]])
+
 
 def substratebound(data,alpha,v1,v2,v3):
     k=data[0,:]
@@ -42,7 +40,7 @@ def substratebound(data,alpha,v1,v2,v3):
     sum = k + s + alpha
     pe = (np.dot(vec1,i))*v1 *0.5 * (sum - ((sum ** 2) - 4 * s * k) ** 0.5)+ ((np.dot(vec2,i))*v2 *0.5 * (sum - ((sum ** 2) - 4 * s * k) ** 0.5)) + \
          ((np.dot(vec3,i))*v3*0.5 * (sum - ((sum ** 2) - 4 * s * k) ** 0.5))
-    #pe=pe.reshape(pe.shape[1])
+  
     return pe
 
 
