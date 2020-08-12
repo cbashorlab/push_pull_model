@@ -129,47 +129,6 @@ def singlecell(list_k, list_s, item):
 
 
 
-# matrix_noise = pd.read_csv('FP-tag data/PEnoise.csv')
-#
-# matrix_noise = matrix_noise[matrix_noise['hospho : PE - Area'] > 0]
-# matrix_noise = matrix_noise[matrix_noise['mCherry - Area'] > 0]
-# pe = matrix_noise['hospho : PE - Area']
-# mcherry = matrix_noise['mCherry - Area']
-# xbins=100
-# ybins=100
-# list_pe=noiselevel(pe, mcherry, xbins, ybins)
-#
-# matrix_noise = pd.read_csv('FP-tag data/Flagnoise.csv')
-#
-# matrix_noise = matrix_noise[matrix_noise['Flag : Alexa Fluor 680 - Area'] > 0]
-# matrix_noise = matrix_noise[matrix_noise['GFP - Area'] > 0]
-# flag = matrix_noise['Flag : Alexa Fluor 680 - Area']
-# gfp = matrix_noise['GFP - Area']
-# list_k=noiselevel(flag, gfp, xbins, ybins)
-#
-# matrix_noise = pd.read_csv('FP-tag data/Mycnoise.csv')
-#
-# matrix_noise = matrix_noise[matrix_noise['Myc : Alexa Fluor 750 - Area'] > 0]
-# matrix_noise = matrix_noise[matrix_noise['GFP - Area'] > 0]
-# myc = matrix_noise['Myc : Alexa Fluor 750 - Area']
-# gfp = matrix_noise['GFP - Area']
-# list_s=noiselevel(myc, gfp, xbins, ybins)
-#
-#
-#
-# data = pd.read_csv('Globalfit_data/170_127.csv')
-#
-# data = data[data['Flag : Alexa Fluor 680 - Area'] > 0]
-# data = data[data['Myc : Alexa Fluor 750 - Area'] > 0]
-# data = data[data['hospho : PE - Area'] > 0]
-# data1 = data
-# kinase = data['Flag : Alexa Fluor 680 - Area']
-# substrate = data['Myc : Alexa Fluor 750 - Area']
-# PE = data['hospho : PE - Area']
-# item=np.arange(4)
-# a=singlecell(list_k, list_s, 100,1,0.2, item)
-
-
 
 
 
