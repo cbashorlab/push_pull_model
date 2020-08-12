@@ -102,7 +102,7 @@ def onehotencoding(list,list2,number):
 # List 2 include kinase variants files
 list1=['Globalfit_data/170_127.csv','Globalfit_data/170EEV.csv','Globalfit_data/170EES.csv','Globalfit_data/170EEK.csv','Globalfit_data/170RR.csv']
 list2=['Globalfit_data/170L1.csv','Globalfit_data/170L2.csv']
-data,vec,vec_va=onehotencoding(list1,list2,1000)
+data,vec,vec_va=onehotencoding(list1,list2,5000)
 list1=['Globalfit_data/170_127.csv','Globalfit_data/170EEV.csv','Globalfit_data/170EES.csv','Globalfit_data/170EEK.csv','Globalfit_data/170RR.csv']
 list2=['Globalfit_data/170L1.csv','Globalfit_data/170L2.csv']
 
@@ -133,7 +133,7 @@ noisedata=noisemodel_sample.singlecell(list_k, list_s, combinedata[:,0])
 for index in range(combinedata.shape[1]-1):
     matrix=noisemodel_sample.singlecell(list_k, list_s, combinedata[:,index+1])
     noisedata=np.vstack([noisedata,matrix])
-#Format: Kinase, Substrate, one hot factor
+#Format: Kinase, Substrate, PE,one hot factor
 data=noisedata.T
 ydata=np.zeros(len(data.T))
 toc=time.perf_counter()
